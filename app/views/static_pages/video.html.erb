@@ -1,0 +1,14 @@
+<div class="sky-form" role="form">
+    <%= form_tag(static_pages_video_path, :method => :get) do %>
+        <%= text_field :video_data, :word, value: @word %>
+        <%= submit_tag  '検索', class: 'btn btn-large btn-primary' %>
+    <% end %>
+</div>
+
+<h1>StaticPages#video</h1>
+<p>Find me in app/views/static_pages/video.html.erb</p>
+<p><%= @title %></p>
+<p>検索表示：</p>
+<table><tbody>
+<%= @video_result.html_safe %>
+</tbody></table>

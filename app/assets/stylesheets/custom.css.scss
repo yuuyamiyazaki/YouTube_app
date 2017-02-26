@@ -1,0 +1,68 @@
+@import "bootstrap";
+@import "bootstrap-sprockets";
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 0px;
+   
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+/*header navigationbar*/
+header.navbar .navbar-inverse {
+    margin-bottom: 0px;
+}
+
+.main {
+  background: #fcc;
+  margin-bottom: 10px;
+}
+.side {
+  background: #fea;
+}
+.main,
+.side {
+  padding: 2%;
+  border-radius: 10px
+}
+ 
+/* Responsive */
+@media ( min-width : 700px ){
+    .flexbox {
+      display: -webkit-flex;
+      display: flex;
+      
+    }
+    
+  .main {
+    margin: 0 10px 0 0;
+  }
+}
+
+.flexbox{
+   width: 100%; 
+}
+
+.main {
+   width: 80%;
+   margin: 0 auto;
+}
+
+li{
+  list-style: none;
+}
